@@ -1,0 +1,209 @@
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Gotham Rounded', sans-serif;
+ 
+  }
+  
+  body {
+    background-image: url(../img/mars-512489_1920.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 100%;
+    width: 800px;
+    background-color: rgba(120, 92, 79, 0.719);
+    position: relative;
+    box-shadow: 0px 25px 80px #913a01ee;
+    border-radius: 5px;
+    
+  }
+  
+   .content {
+    padding: 20px;
+  
+  } 
+  
+  .header {
+    backdrop-filter: blur(6px);
+    background-color: rgba(27, 25, 27, 0.705);
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px; 
+  }
+  
+  
+  .icon-container {
+    position: relative;
+    top: 70px;
+    padding: 20px;
+    background-color: white;
+    background-image: url(../img/planetarium-5636940_640.png);
+     background-size: 250px;
+     background-repeat: no-repeat;
+    background-position: center;
+    box-shadow:  0px 25px 60px #f508089f;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+  }
+
+  .textAlignLeft {
+    margin-right: 290px;
+    color: rgba(255, 255, 255, 0.884);
+    font-family: Montserrat;
+    
+     }
+    
+  .textWhite {
+       color: white;
+       font-size: 15px;
+   
+     }
+    
+  
+  .status {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .detail-section {
+    display: flex;
+    justify-content: space-between;
+
+  }
+  
+  .detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .detail.bordered {
+    border-left: 1px solid rgb(247, 238, 238);
+    border-right: 1px solid rgb(245, 241, 241);
+  }
+  
+  .bottom_border {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.932);
+  }
+  
+  .sunset_border {
+      border-bottom: 2px solid white;
+    }
+.sunrise_border {
+  border-bottom: 2px solid white;
+}
+  .dateMonth {
+    border-top: 2px solid white;
+  
+  }
+  
+.image {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  float: right;
+  width: 20px;
+  filter: drop-shadow(0 0 0.75rem rgb(58, 210, 248))
+}
+
+  .title,.temp, .unrise, .unset {
+    font-size: 1.3rem;
+    flex-grow: 1;
+    font-weight: bold;
+    color: rgb(255, 250, 247);
+    font-family: Montserrat;
+   
+  }
+  .unrise, .unset {
+    margin-top: auto;
+  }
+  .high, .low {
+    color: rgb(250, 125, 125);
+    margin-right: 70px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+  }
+  
+  .high_degree, .low_degree, #sunrise, #sunset, .solData
+  {
+    color: rgb(8, 20, 19);
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: 'Qahiri', sans-serif; 
+    filter: drop-shadow(0 0 0.75rem rgb(58, 210, 248))
+  }
+
+  .high_degree, .low_degree {
+  margin-left: 20px;
+  }
+
+  hr, hr {
+    border-bottom: 2px solid white;
+  }
+
+  .sp {
+    border-bottom: 2px solid white;
+  }
+
+  .month, .givenDate {
+   font-family: 'Bebas Neue', cursive;
+   font-size: 1.5rem;
+  filter: drop-shadow(0 0 0.75rem rgb(58, 210, 248))
+  }
+  .date-search-container {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.897);
+    max-width: 560px;
+    width: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 3px;
+    height: 57px;
+}
+
+  
+  .date-search, .date-search-container {
+    width: 85%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+ .searchButton {
+  background: rgba(206, 200, 197, 0.719);
+  width: 11%;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer; 
+  font-family:'Bebas Neue';
+  font-size: 1.1rem;
+ }
+
+ .searchButton:hover {
+   background-color:rgb(250, 125, 125);
+ }
+ 
+ .date-search {
+   background-color: rgba(206, 200, 197, 0.719);
+ }

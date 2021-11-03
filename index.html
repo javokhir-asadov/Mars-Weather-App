@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8" />
+  <title>Mars weather</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Qahiri&display=swap" rel="stylesheet">
+  <!--  Styles  -->
+  <link rel="stylesheet" href="/style/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- Scripts -->
+  <script src="/script/script.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="icon-container">
+        <canvas id="icon" width="100" height="100"></canvas>
+      </div>
+    </div>
+    <div class="content">
+      <div class="general-information">
+        <h1 class="textAlignLeft">Latest Weather
+          <br>
+          at Gale Crater
+        </h1>
+       
+      </div>
+
+      <div class="detail-section">
+        <div class="detail">
+          <img class="image" src="img/outline_public_black_24dp.png">
+          <span class="sp">
+          <div class="title">Sol</div>
+          </span>
+          <p class="solData"></p>
+          <img class="image" src="img/outline_calendar_view_month_black_24dp.png">
+          <div class="dateMonth">
+            
+            <p class="givenDate"></p>
+            <p class="month"> </p>
+          </div>
+        </div>
+
+
+        <div class="detail bordered">
+          <div class="bottom_border">
+            <img class="image" src="img/outline_thermostat_black_24dp.png">
+            <div class="temp">Temperature</div>
+          </div>
+          <div class="value">
+            <p class="high"> High:</p>
+            <hr>
+            <p class="low">Low:</p>
+          <br/>
+          </div>
+        </div>
+
+        <div class="detail">
+          <div class="sunrise_border">
+            <img class="image" src="img/outline_brightness_7_black_24dp.png">
+            
+            <div class="unrise">Sunrise</div>
+          </div>
+          <p id="sunrise"></p>
+          <br />
+
+          <div class="sunset_border">
+            <img class="image" src="img/outline_brightness_4_black_24dp.png">
+            <div class="unset">Sunset</div>
+          </div>
+          <p id="sunset"></p>
+        </div>
+      </div>
+
+
+      <form class="date-search-container">
+        <input type="text" class="date-search" date-city-search placeholder="YYYY-MM-DD Enter the date">
+        <input type="submit" class="searchButton" value="Search">
+      </form>
+    </div>
+  </div>
+
+
+
+
+  </main>
+</body>
+
+</html>
